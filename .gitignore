@@ -1,0 +1,4 @@
+# Sensitive
+*.json
+__pycache__/
+.idea/
