@@ -1,0 +1,35 @@
+{
+  "mt5": {
+    "username": LOGIN_INTEGERS,
+    "password": "password",
+    "server": "server",
+    "mt5_pathway": "C:/Program Files/MetaTrader 5/terminal64.exe",
+    "symbols": ["EURUSD","GBPUSD"],
+    "timeframe": "M1"
+  },
+
+  "vars": {
+    "candle_lookback": 100,
+    "selected_strategies": ["ss"]
+  },
+
+  "strategies": {
+    "ss": {
+      "indicators": ["slow_stochastic", "ma"]
+    }
+  },
+
+  "indicator_parameters": {
+    "slow_stochastic": {
+      "length": 10,
+      "%K": 6,
+      "%D": 3
+    },
+    "ema": {
+      "size": 200
+    },
+    "ma": {
+      "size": 12
+    }
+  }
+}
