@@ -33,7 +33,7 @@ def retrieve_candles(cfg, s):
     pandas.set_option('display.max_columns', None  )
     return candles
 
-def get_cfg(path="cfg/cfg.json"):
+def get_cfg(path="cfg.json"):
     if os.path.exists(path):
         f = open(path, "r")
         parameters = json.load(f)
